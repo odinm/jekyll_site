@@ -1,0 +1,33 @@
+---
+layout: post
+title: Ayuda a Firefox Multiproceso con Add-on Compatibility Reporter
+date: 2017-01-31 04:15:46.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Anuncios
+- Desarrolladores
+- Firefox
+tags: []
+meta:
+  _edit_last: '86'
+  _redirect_url: ''
+author:
+  login: bobsicle
+  email: me.bobsicle@gmail.com
+  display_name: Sicle
+  first_name: ''
+  last_name: ''
+---
+<p>Firefox está actualmente en transición a una arquitectura multiproceso (e10s), la cual dará a los usuarios una mayor estabilidad y una mejor respuesta del navegador. Esta transición afecta ciertos complementos, los cuales deben adaptarse al nuevo modelo o no trabajarán de forma adecuada, y serán marcados como incompatibles. Estamos notificando a los desarrolladores de complementos de distintas formas, esto con el fin de que puedan <a href="https://wiki.mozilla.org/Add-ons/developer/communication">verificar</a> cuáles de sus complementos serán afectados, para que puedan actualizar sus complementos y hacerlos compatibles.</p>
+<p>Ahora hay una manera en la que tú puedes ayudar a ampliar nuestros esfuerzos, y es de la siguiente manera: reportando complementos incompatibles.</p>
+<p>El <a href="https://addons.mozilla.org/addon/add-on-compatibility-reporter/">Add-on Compatibility Reporter</a> (ACR) te permite comunicarnos si un complemento trabaja en una versión de Firefox en particular. Estos reportes han sido una herramienta muy útil para nosotros al momento de rastrear complementos incompatibles y ayudar a los desarrolladores a solucionar esto. Los desarrolladores son capaces de ver los reportes que tú envíes para sus complementos. Si quieres probarlo te recomendamos que lo hagas en una versión preliminar de Firefox: <a href="https://www.mozilla.org/firefox/channel/#beta">Beta</a>, <a href="https://www.mozilla.org/firefox/channel/#developer">Developer Edition</a> o <a href="https://nightly.mozilla.org/">Nightly</a>. Estas versiones cuentan con el multiproceso habilitado para todos los complementos de forma predeterminada.</p>
+<p>Las últimas versiones de ACR incluyen soporte para multiproceso en Firefox. Una vez instalado el complemento, verás cuáles de tus complementos cuentan ya con compatibilidad para multiproceso. Verás de igual manera si tu versión de Firefox cuenta con multiproceso habilitado. Y los íconos te permitirán reportar si un complemento trabaja de forma adecuada o no.</p>
+<p><a href="https://www.mozilla-hispano.org/ayuda-al-firefox-multiproceso-con-add-on-compatibility-reporter/acr-popup/" rel="attachment wp-att-40930"><img class="aligncenter wp-image-40930" src="{{ site.baseurl }}/assets/acr-popup.png" sizes="(max-width: 650px) 100vw, 650px" srcset="https://www.mozilla-hispano.org/wp-content/uploads/acr-popup.png 876w, https://www.mozilla-hispano.org/wp-content/uploads/acr-popup-300x255.png 300w, https://www.mozilla-hispano.org/wp-content/uploads/acr-popup-130x110.png 130w" alt="Popup de ACR" width="650" height="552" /></a></p>
+<p>También podrás realizar todo esto desde el administrador de complementos, si tú lo deseas.</p>
+<p><a href="https://www.mozilla-hispano.org/ayuda-al-firefox-multiproceso-con-add-on-compatibility-reporter/acr-768x187/" rel="attachment wp-att-40929"><img class="aligncenter wp-image-40929" src="{{ site.baseurl }}/assets/acr-768x187.png" sizes="(max-width: 649px) 100vw, 649px" srcset="https://www.mozilla-hispano.org/wp-content/uploads/acr-768x187.png 768w, https://www.mozilla-hispano.org/wp-content/uploads/acr-768x187-300x73.png 300w, https://www.mozilla-hispano.org/wp-content/uploads/acr-768x187-130x32.png 130w" alt="Administrador de complementos" width="649" height="158" /></a></p>
+<p>Para determinar si un complemento es compatible con el multiproceso, ACR busca un indicador dentro del manifiesto de ese complemento establecido por el desarrollador. Así que, por ejemplo, Password Exporter aparece como no compatible aunque trabaje de forma correcta con el multiproceso habilitado. Yo mantengo Password Exporter y no he actualizado aún el manifiesto de mi complemento para que refleje esto (¡lo haré pronto!) y es por esta razón que aparece como no compatible.</p>
+<p>Saber cuáles complementos trabajan bien con el multiproceso en Firefox es crítico para una transición exitosa, así que esperamos que puedas ayudarnos <strong>instalando el <a href="https://addons.mozilla.org/addon/add-on-compatibility-reporter/">Add-on Compatibility Reporter</a></strong> y dejándonos saber cuáles complementos no están trabajando bien para ti.</p>

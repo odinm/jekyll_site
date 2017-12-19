@@ -1,0 +1,32 @@
+---
+layout: post
+title: Módulo SQLite para Jetpack, ahora con consultas asíncronas
+date: 2010-08-06 21:12:28.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Anuncio
+- Desarrolladores
+- Firefox
+tags:
+- async
+- jetpack
+- query
+- sqlite
+meta:
+  _edit_last: '3'
+  _wp_old_slug: ''
+author:
+  login: jceb
+  email: julianceballos@mozilla-mexico.org
+  display_name: Julián Ceballos
+  first_name: Julián
+  last_name: Ceballos
+---
+<p><img class="alignleft" src="{{ site.baseurl }}/assets/jetpack-header.png" alt="" width="250" height="250" />Hola compañeros al módulo para Jetpack que hicimos ayer, le hemos modíficado unas líneas de código para que ahora sea posible manejar consultas asíncronas con el SQLite en Firefox, la manera de implementarse ha cambiado un poquíto no más.</p>
+<p>Lo único que cambia es que ahora al hacer execute con una consulta que devuelva resultados, se tiene que agregar una función que nos ayuda a manejar la solicitud asincrona, es decir al agregar esta función ya no habrá el caso en que se pierda la información porqué no la leímos en el momento apropiado.</p>
+<p>Para más información:</p>
+<p><a href="http://julianceballos.wordpress.com/2010/08/07/modulo-sqlite-para-jetpack-nueva-implementacion/" target="_blank">http://julianceballos.wordpress.com/2010/08/07/modulo-sqlite-para-jetpack-nueva-implementacion/</a></p>

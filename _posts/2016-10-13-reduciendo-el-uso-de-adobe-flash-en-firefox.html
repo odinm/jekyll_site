@@ -1,0 +1,32 @@
+---
+layout: post
+title: Reduciendo el uso de Adobe Flash en Firefox
+date: 2016-10-13 22:04:29.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Anuncios
+- Firefox
+tags: []
+meta:
+  _edit_last: '86'
+  _redirect_url: ''
+author:
+  login: bobsicle
+  email: me.bobsicle@gmail.com
+  display_name: Sicle
+  first_name: ''
+  last_name: ''
+---
+<p>Los plugins del navegador, especialmente Flash, han permitido la existencia de algunas de nuestras experiencias preferidas en la Web, como son videos y contenido interactivo. Pero algunas veces los plugins significan problemas de estabilidad, rendimiento y seguridad en los navegadores. Esto es algo que los usuarios no deberían aceptar.</p>
+<p>Mozilla y la Web como un todo, han tomado algunas medidas para reducir la dependencia de contenido de Flash en la web en nuestra navegación diaria. Así, desde inicios de agosto, Firefox comenzó a bloquear cierto contenido de Flash que no es esencial para la experiencia del usuario, sin olvidar seguir soportando el resto del contenido útil que lo necesita. Estos y futuros cambios traerán a los usuarios mejoras en seguridad, un aumento en la vida útil de la batería, carga más rápida de páginas web, y una mejor respuesta del navegador.</p>
+<p>En los últimos años, se han implementado Web APIs para reemplazar funcionalidades que anteriormente eran proporcionadas únicamente a través de plugins. Esto incluye reproducción de audio/video, la capacidad de realizar streaming, integración del portapapeles, gráficos rápidos en 2D y 3D, WebSocket y acceso a la cámara web y al micrófono. Así como algunos sitios han cambiado de usar Flash a usar otras tecnologías web, la cantidad de fallas por plugins ha disminuido significativamente.</p>
+<p><a href="https://blog.mozilla.org/futurereleases/2016/07/20/reducing-adobe-flash-usage-in-firefox/plugin-crash-rate-in-firefox/" rel="attachment wp-att-2408"><img class="alignnone wp-image-2408 size-large" src="{{ site.baseurl }}/assets/Plugin-crash-rate-in-Firefox-600x378.jpg" sizes="(max-width: 600px) 100vw, 600px" srcset="https://blog.mozilla.org/futurereleases/files/2016/07/Plugin-crash-rate-in-Firefox-600x378.jpg 600w, https://blog.mozilla.org/futurereleases/files/2016/07/Plugin-crash-rate-in-Firefox-252x159.jpg 252w, https://blog.mozilla.org/futurereleases/files/2016/07/Plugin-crash-rate-in-Firefox-768x484.jpg 768w, https://blog.mozilla.org/futurereleases/files/2016/07/Plugin-crash-rate-in-Firefox.jpg 1324w" alt="Plugin crash rate in Firefox" width="600" height="378" /></a></p>
+<p>Firefox continuará esta tendencia bloqueando contenido específico de Flash que es invisible a los usuarios. Con esto se espera reducir las fallas de Flash y cuelgues hasta en un 10%. Para minimizar los problemas de compatibilidad con sitios web, los cambios serán inicialmente limitados a una pequeña y selecta <a href="https://github.com/mozilla-services/shavar-plugin-blocklist">lista</a> de contenido de Flash que puede ser reemplazado con HTML. Intentaremos ampliar esta lista con el paso del tiempo.</p>
+<p>Posteriormente en este año, planeamos extender esta lista para incluir el uso de Flash para verificar la visibilidad de contenido, una práctica muy común para medir publicidad. Esto mejorará el rendimiento del navegador y la batería del dispositivo. Realizaremos este cambio al mismo tiempo que se implementa la <a href="https://github.com/WICG/IntersectionObserver/blob/gh-pages/explainer.md">API Intersection Observer, </a>que es el equivalente en HTML (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1243846">Firefox bug 1243846</a>) y recomendamos a los creadores de contenido que actualmente usan Flash para medir la visibilidad de su contenido, que adopten esta nueva API tan pronto como esta esté disponible.</p>
+<p>En 2017, Firefox requerirá una aprobación click-to-activate por parte de los usuarios antes de que un sitio web active el plugin de Flash por cualquier contenido. Los sitios web que actualmente usan Flash o Silverlight para videos o juegos deben adoptar tecnologías HTML tan pronto como sea posible. Actualmente se soporta la reproducción encriptada de video usando <a href="https://blog.mozilla.org/blog/2015/12/17/firefox-users-can-now-watch-netflix-html5-video-on-windows/">Adobe Primetime</a> y <a href="https://blog.mozilla.org/futurereleases/2016/04/08/mozilla-to-test-widevine-cdm-in-firefox-nightly/">Google Widevine</a> como alternativas al plugin de video.</p>
+<p>Trabajamos a la par continuamente con Adobe para entregar a nuestros usuarios la mejor experiencia posible con Flash. Nuestra equipo de ingeniería ha logrado diversas mejoras como el soporte a high-DPI en Windows, sandboxing mejorado y mayor rapidez en la muestra de información por parte de Flash, las cuales mejoran el rendimiento y la estabilidad.</p>
+<p>Estos cambios son parte de nuestros esfuerzos encaminados a hacer la navegación más segura y más rápida, sin sacrificar las experiencias Web que aman nuestros usuarios. Como anunciamos el <a href="https://blog.mozilla.org/futurereleases/2015/10/08/npapi-plugins-in-firefox/">año pasado</a>, Firefox planea dejar de soportar todos los plugins NPAPI, excepto Flash, en marzo de 2017. La siguiente versión mayor de Firefox ESR (<a href="https://www.mozilla.org/en-US/firefox/organizations/faq/">Extended Support Release</a>), igualmente programada para marzo, seguirá soportando plugins como Silverlight y Java hasta inicios de 2018 para aquellos usuarios que necesiten más tiempo para realizar la transición.</p>
