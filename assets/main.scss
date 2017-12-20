@@ -1,0 +1,136 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('css/mozilla.css');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+header {
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #000;
+  left: 0;
+  height: 1.5em;
+  padding: 0.5em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  z-index: 200;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mx_container {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("portada.png");
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: justify;
+  margin-top: 12%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#site-title {
+  width: 70%;
+  height: auto;
+  position: relative;
+  margin: 5% 1%;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  box-shadow: 3px 3px 1px #54ffbd;
+}
+
+.mx_container .content {
+  width: 85%;
+  position: relative;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  color: white;
+  margin: 2% 0 1% 20%;
+  margin: 2% 0 1% 0%;
+  padding: 8px;
+  background-color: black;
+  box-shadow: 3px 3px 1px #54ffbd;
+  font-size: 12px;
+}
+
+#nav-mozilla-mexico-menu li a {
+  color: #fff44f;
+}
+
+.nav-mozilla-mexico {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #000;
+}
+
+.nav-mozilla-mexico-menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: flex-start;
+  justify-content: flex-start;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+@media (min-width:480px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:1024px) {
+  .container {
+    width: 60%;
+  }
+
+  header {
+    height: 2.5em;
+  }
+
+  .mx_container {
+    width: 100%;
+    height: 370px;
+    margin-top: 3%;
+  }
+
+  .mx_container .content {
+    width: 50%;
+    margin: 2% 0 1% 20%;
+    font-size: 20px;
+  }
+
+  #site-title {
+    width: 395px;
+    height: 82px;
+    margin: 1% 0;
+    padding: 20px;
+  }
+}
