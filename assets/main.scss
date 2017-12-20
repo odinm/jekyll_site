@@ -92,6 +92,11 @@ header {
   display: flex;
   -webkit-box-pack: flex-start;
   justify-content: flex-start;
+  padding: 1% 0;
+}
+
+.nav-mozilla-mexico-menu ul li {
+  margin: 0 5%;
 }
 
 ul, ol {
@@ -122,8 +127,8 @@ ul, ol {
   }
 
   .mx_container .content {
-    width: 50%;
-    margin: 2% 0 1% 20%;
+    width: 70%;
+    margin: 1% 0 1% 10%;
     font-size: 20px;
   }
 
@@ -132,5 +137,9 @@ ul, ol {
     height: 82px;
     margin: 1% 0;
     padding: 20px;
+  }
+
+  .nav-mozilla-mexico-menu li {
+    margin: 0 3% 0 0;
   }
 }
